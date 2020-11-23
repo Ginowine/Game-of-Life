@@ -1,0 +1,4 @@
+# Project exclude paths
+/.gradle/
+/Problems/Find the seed/out/
+/Problems/Find the seed/out/production/classes/
