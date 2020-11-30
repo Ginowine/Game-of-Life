@@ -194,6 +194,12 @@ files:
         }
     }
   learner_created: false
+- name: src/life/Universe.java
+  visible: true
+  learner_created: true
+- name: src/life/GenerationAlgorithm.java
+  visible: true
+  learner_created: true
 feedback_link: https://hyperskill.org/projects/54/stages/295/implement
-status: Failed
+status: Solved
 record: -1

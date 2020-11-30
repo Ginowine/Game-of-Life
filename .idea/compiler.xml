@@ -2,14 +2,16 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel>
-      <module name="Problems-Find_the_seed_main" target="1.8" />
-      <module name="Problems-Find_the_seed_test" target="1.8" />
-      <module name="Problems-Gaussian_random_numbers_main" target="1.8" />
-      <module name="Problems-Gaussian_random_numbers_test" target="1.8" />
-      <module name="Problems-Generate_random_numbers_main" target="1.8" />
-      <module name="Problems-Generate_random_numbers_test" target="1.8" />
-      <module name="util_main" target="1.8" />
-      <module name="util_test" target="1.8" />
+      <module name="Game_of_Life-task_main" target="11" />
+      <module name="Game_of_Life-task_test" target="11" />
+      <module name="Problems-Find_the_seed_main" target="11" />
+      <module name="Problems-Find_the_seed_test" target="11" />
+      <module name="Problems-Gaussian_random_numbers_main" target="11" />
+      <module name="Problems-Gaussian_random_numbers_test" target="11" />
+      <module name="Problems-Generate_random_numbers_main" target="11" />
+      <module name="Problems-Generate_random_numbers_test" target="11" />
+      <module name="util_main" target="11" />
+      <module name="util_test" target="11" />
     </bytecodeTargetLevel>
   </component>
 </project>
