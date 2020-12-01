@@ -8,3 +8,4 @@ content:
 - Output names of the methods
 - Return empty string when argument is null
 - Avoid NPE
+- Only true or false
