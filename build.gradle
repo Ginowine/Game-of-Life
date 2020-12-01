@@ -10,7 +10,7 @@ buildscript {
 subprojects {
     apply plugin: 'application'
     apply plugin: 'java'
-    //apply plugin: "kotlin"
+    plugin: "kotlin"
 
     sourceCompatibility = 11
 

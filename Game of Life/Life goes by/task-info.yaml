@@ -259,6 +259,96 @@ files:
         fun Char.isAlive(): Boolean = this != ' '
     }
   learner_created: false
+- name: src/life/Universe.java
+  visible: true
+  text: |
+    package life;
+
+    import javafx.scene.control.Cell;
+
+    import java.util.ArrayList;
+    import java.util.Random;
+
+    public class Universe {
+
+
+        private int size;
+        private int seed;
+
+        public Universe(int size, int seed) {
+            this.size = size;
+            this.seed = seed;
+        }
+
+        public String[][] evolve() {
+            String[][] field = new String[size][size];
+            Random rng = new Random(seed);
+            for (int i = 0; i < size; i++) {
+                for (int j = 0; j < size; j++) {
+                    if (rng.nextBoolean()) {
+                        field[i][j] = "O";
+                    } else {
+                        field[i][j] = " ";
+                    }
+                }
+            }
+            return field;
+        }
+
+        public void printUniverse(String[][] field, int size) {
+            for (int i = 0; i < size; i++) {
+                StringBuilder sb = new StringBuilder();
+                for (int j = 0; j < size; j++) {
+                    sb.append(field[i][j]);
+                }
+                System.out.println(sb.toString());
+            }
+        }
+    }
+  learner_created: true
+- name: src/life/GenerationAlgorithm.java
+  visible: true
+  text: |
+    package life;
+
+    import java.util.Arrays;
+    import java.util.Random;
+
+    public class GenerationAlgorithm {
+        private String[][] field;
+
+        public GenerationAlgorithm(String[][] field) {
+            this.field = field;
+        }
+
+        public String[][] calculateNextGeneration() {
+            String[][] oldField = Arrays.stream(this.field).map(String[]::clone).toArray(String[][]::new);
+            for (int i = 0; i < field.length; i++) {
+                for (int j = 0; j < field.length; j++) {
+                    int countOfNeighbors = countNeighbors(oldField, i, j);
+                    if (oldField[i][j] == " " && countOfNeighbors == 3) {
+                        this.field[i][j] = "O";
+                    } else if (oldField[i][j] == "O" && (countOfNeighbors < 2 || countOfNeighbors > 3)) {
+                        this.field[i][j] = " ";
+                    }
+                }
+            }
+            return this.field;
+        }
+
+        private int countNeighbors(String[][] oldField, int row, int column) {
+            int neighbors = 0;
+            for (int i = -1; i <= 1; i++) {
+                for (int j = -1; j <= 1; j++) {
+                    if (oldField[(field.length+row+i)%field.length][(field.length+column+j)%field.length] == "O" && (i!=0 || j!=0)) {
+                        neighbors++;
+                    }
+                }
+            }
+            return neighbors;
+        }
+    }
+  learner_created: true
 feedback_link: https://hyperskill.org/projects/54/stages/296/implement
 status: Unchecked
 record: -1
