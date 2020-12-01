@@ -153,6 +153,10 @@ topics:
     theory_id: 8504
   - title: The basic window in Swing
     theory_id: 5514
+  - title: Swing components
+    theory_id: 6295
+  - title: Layout managers
+    theory_id: 6824
   - title: Synchronous, asynchronous, parallel
     theory_id: 9332
   - title: Concurrency and parallelism
@@ -173,10 +177,6 @@ topics:
     theory_id: 4883
   - title: Lambda expressions
     theory_id: 11635
-  - title: Swing components
-    theory_id: 6295
-  - title: Layout managers
-    theory_id: 6824
   - title: Method references
     theory_id: 3620
   - title: Functional interfaces
