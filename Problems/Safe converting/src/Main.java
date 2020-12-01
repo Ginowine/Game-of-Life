@@ -4,7 +4,6 @@ public class Main {
 
     public static int convert(Long val) {
         // write your code here
-//        int value = val.intValue();
         if (val == null){
             return 0;
         }else if (val > Integer.MAX_VALUE){
