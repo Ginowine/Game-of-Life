@@ -350,5 +350,25 @@ files:
     }
   learner_created: true
 feedback_link: https://hyperskill.org/projects/54/stages/296/implement
-status: Unchecked
+status: Failed
+feedback:
+  message: |2
+
+    FAILURE: Build failed with an exception.
+
+    * Where:
+    Build file &#39;C:\Users\Gino\JavaSpringBootApplications\Game-of-Life\build.gradle&#39; line: 13
+
+    * What went wrong:
+    A problem occurred evaluating root project &#39;Game_of_Life&#39;.
+    &gt; Failed to apply plugin [id &#39;kotlin&#39;]
+       &gt; The current Gradle version 5.2.1 is not compatible with the Kotlin Gradle plugin. Please use Gradle 5.3 or newer, or the previous version of the Kotlin plugin.
+
+    * Try:
+    Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output. Run with --scan to get full insights.
+
+    * Get more help at https://help.gradle.org
+
+    BUILD FAILED in 1s
+  time: Sun, 13 Dec 2020 18:58:09 UTC
 record: -1
